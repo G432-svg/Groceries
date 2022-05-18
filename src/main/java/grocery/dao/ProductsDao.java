@@ -1,6 +1,6 @@
-package groceries.dao;
+package grocery.dao;
 
-import groceries.data.Product;
+import grocery.data.Product;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import static groceries.dao.ConnectionClass.getConnection;
+import static grocery.dao.ConnectionClass.getConnection;
 
 public class ProductsDao {
 

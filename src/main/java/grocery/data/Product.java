@@ -1,4 +1,4 @@
-package groceries.data;
+package grocery.data;
 
 import javax.persistence.*;
 import java.io.Serializable;

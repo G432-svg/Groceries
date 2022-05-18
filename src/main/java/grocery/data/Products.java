@@ -1,21 +1,20 @@
 
-
-package groceries.data;
+package grocery.data;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.List;
+
 @Entity
 public class Products {
+
+    private Long id;
+
     private List<Product> products = new ArrayList<Product>();
 
     public Products () {
         this.initStoreItems();
     }
-
-//    public List<Product> getProducts(Id) {
-//        return products;
-//    }
 
     public void initStoreItems() {
         String [] productNames = {"Bread", "Croissant", "Limonade","Milk","Pizza","Water"};
@@ -26,4 +25,14 @@ public class Products {
             this.products.add(new Product(i+1, productNames[i], productPrice[i], amount[i]));
         }
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Id
+    public Long getId() {
+        return id;
+    }
+
 }

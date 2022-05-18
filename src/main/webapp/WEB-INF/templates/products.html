@@ -9,11 +9,11 @@
 
 <h1 th:text="'Hello '+ ${session.currentUser}" th:unless = "${session==null}"></h1>
 
-<div th:each=product:${products}>
+<div th:each=item:${items}>
 
-    <p th:text=${product.name}> </p>
-    <p th:text=${product.brand}> </p>
-    <img th:src=@{/images/{productimage}(productimage=${product.imageLocation})}>
+    <p th:text=${item.name}> </p>
+    <p th:text=${item.brand}> </p>
+    <img th:src=@{/images/{itemimage}(itemimage=${item.imageLocation})} alt="..." src="...">
     <hr>
 
 

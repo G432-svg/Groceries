@@ -1,13 +1,11 @@
-package groceries.repositories;
-
-import groceries.data.Product;
+package grocery.repositories;
+import grocery.data.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
-
+import org.springframework.stereotype.Repository;
 import java.util.List;
 
+@Repository
 public interface ProductRepository extends JpaRepository<Product, Integer> {
     List<Product> findByProductName(String name);
-
-
 
 }

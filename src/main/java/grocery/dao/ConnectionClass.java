@@ -1,4 +1,4 @@
-package groceries.dao;
+package grocery.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
